@@ -1,0 +1,36 @@
+/* Default (applies to all screen sizes unless overridden) */
+.text-truncate-custom {
+  display: inline-block;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  max-width: 150px; /* Default max-width */
+}
+
+/* Small devices (landscape phones, 576px and up) */
+@media (min-width: 576px) {
+  .text-truncate-custom {
+    max-width: 200px;
+  }
+}
+
+/* Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) {
+  .text-truncate-custom {
+    max-width: 250px;
+  }
+}
+
+/* Large devices (desktops, 992px and up) */
+@media (min-width: 992px) {
+  .text-truncate-custom {
+    max-width: 300px;
+  }
+}
+
+/* Extra large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) {
+  .text-truncate-custom {
+    max-width: 450px;
+  }
+}
